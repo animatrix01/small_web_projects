@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f1f1f1;
+}
+.container {
+    background-color: white;
+    padding: 48px 40px 36px;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    width: 350px;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+input[type="text"] {
+    width: 100%;
+    padding: 13px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: 0 0 0 1px #dadce0;
+    transition: box-shadow 0.3s;
+}
+input[type="text"]:focus {
+    box-shadow: 0 0 0 2px #1a73e8;
+}
+.input-container label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #5f6368;
+    pointer-events: none;
+    transition: 0.3s ease all;
+  }
+  
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+    top: 0;
+    font-size: 12px;
+    background-color: white;
+    padding: 0 5px;
+    color: #1a73e8;
+}
+  
+.input-container input:not(:focus) + label {
+    color: #5f6368;
+}
+  
+input[type="text"]::placeholder {
+    color: transparent;
+}
+.forgot-email {
+    color: #1a73e8;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.guest-mode {
+    margin-top: 40px;
+    font-size: 14px;
+}
+.guest-mode a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+.create-account {
+    color: #1a73e8;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.next-button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
